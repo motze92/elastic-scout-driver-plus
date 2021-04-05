@@ -18,6 +18,7 @@ interface SearchRequestBuilderInterface
 
     public function paginate(
         int $perPage = self::DEFAULT_PAGE_SIZE,
+        array $columns = ['*'],
         string $pageName = 'page',
         int $page = null
     ): Paginator;
