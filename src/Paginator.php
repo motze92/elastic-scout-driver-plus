@@ -36,7 +36,7 @@ final class Paginator extends LengthAwarePaginator
         }
 
         parent::__construct(
-            $searchResult->matches()->all(),
+            $searchResult->models()->all(),
             $searchResult->total(),
             $perPage,
             $currentPage,
